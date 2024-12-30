@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Danjammal Express - Quality products at your fingertips">
+    <title>Danjammal Express</title>
+    <!-- Bootstrap and AOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .navbar {
+            background-color: #1e212d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .nav-link {
+            color: #f8f9fa;
+            margin-right: 10px;
+        }
+        .navbar .nav-link:hover {
+            color: #ffc107;
+        }
+        .hero {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                        url('assets/images/hero-bg.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 140px 0;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .categories .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: none;
+            border-radius: 10px;
+        }
+        .categories .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+        .btn-primary:hover {
+            background-color: #e0a800;
+            border-color: #e0a800;
+        }
+        footer {
+            background-color: #1e212d;
+            color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/slogan.jpeg" alt="Danjammal Express" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#items">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" data-aos="fade-up">
+        <div class="container">
+            <h1>Welcome to DanJammal Express</h1>
+            <p>Your trusted marketplace for quality products and services.</p>
+            <a href="#items" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+<!-- Updated Items Section -->
+<section id="items" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Our Products</h2>
+        <div class="row">
+            <!-- Product Card -->
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/loacker25g.png" class="card-img-top" alt="Loacker Sandwich">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Loacker Sandwich Chocolate 25g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/loackerdc25g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">LOACKER SANDWICH DARK CHOCOLATE 25G </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/loackerhz25.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">LOACKER SANDWICH HAZELNUT 25G </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/loackermv25g" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">LOACKER SANDWICH MILK VANILLE 25G </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/m&ms45g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">M&Ms CHOCOLATE 45g</h5> </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/m&msp45g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">M&Ms PEANUT 45g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/bounty57g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BOUNTY 57g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/mars51g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">MARS 51g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/snickers50g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">SNICKERS 50g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/lurpack200g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">LURPACK UNSALTED BUTTER 200g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/puckcheddar200g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PUCK CHEDDAR SLICE 200g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/maltesers37g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">MALTESERS 37g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/Tagliatelle_500g_pack_front.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BARILLA TAGLIATELLE 500g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/puckglass140g.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PUCK GLASS JAR 140g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/torrescaviar.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TORRES CAVIAR FLAVOURED CHIPS 40g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/torresblacktruffle40.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TORRES BLACK TRUFFLE CHIPS 40g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/torrescuredcheese40.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TORRES CURED CHEESE FLAVOURED CHIPS 50g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/torresdelavera40.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TORRES DE LA VERA HOT SMOKED PAPRIKA CHIPS 50g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/torresmedeterranianchips50.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">TORRES MEDETERRANEAN SALT CHIPS 50g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/m&mscrispy36.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">M&Ms CRISPY 36g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/maltesersminibunnies58.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">MALTESERS MINI BUNNIES 58g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/m&mschocoeggs.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">M&Ms CHOC MILD CRISP EGGS 72g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/pringleshot&spicy.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PRINGLES HOT & SPICY 165g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/pringlesbbq.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PRINGLES BBQ 165g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/pringlessaltandvinegar.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PRINGLES SALT & VINEGAR 165g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/pringlesoriginal.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PRINGLES ORIGINAL 165g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/pringlesoriginal40g" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PRINGLES ORIGINAL 40g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/balconimuffin40g.jpg" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BALCONI MUFFIN GOCCE CIOCCOLATO 40g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/balconiduocroissant.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BALCONI CROISSANT DUO CACAO 50g </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/balconitrancettocacao.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BALCONI TRANCETTO CACAO</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/balconisnackalatte.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BALCONI SNACK A LATTE </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/trancettofragola.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BALCONI TRANCETTO FRAGOLA</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images/barillaspaghetti500.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BARILLA SPAGHETTI 500g</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="assets/images//maestrella.png" class="card-img-top" alt="Item Name 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">MAESTRELLA MOZARELLA</h5>
+                    </div>
+                </div>
+            </div>
+            <style>
+                /* General Styling for Items Section */
+                #items {
+                    background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+                    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    padding: 40px 0;
+                }
+                .product-card {
+                    border: none;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    border-radius: 10px;
+                }
+                .product-card img {
+                    height: 200px;
+                    object-fit: cover;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+                .product-card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                }
+                .product-card:hover .card-title {
+                    color: #ffc107;
+                }
+                /* Section Title Styling */
+                #items h2 {
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                    color: #1e212d;
+                    text-transform: uppercase;
+                    position: relative;
+                    display: inline-block;
+                }
+                #items h2:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 60px;
+                    height: 3px;
+                    background-color: #ffc107;
+                }
+            </style>
+        </div>
+    </div>
+</section>
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">About DanJammal Express</h2>
+        <div class="row align-items-center">
+            <!-- Icon Section -->
+            <div class="row mt-5 text-center">
+                <!-- First Icon -->
+                <div class="col-md-4" data-aos="zoom-in">
+                    <img src="assets/images/quality.png" alt="High Quality Products" class="img-fluid mb-3" style="height: 80px;">
+                    <p>We provide high-quality products to meet your expectations.</p>
+                </div>
+                <!-- Second Icon -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/images/kano.jpg" alt="Based in Kano Nigeria" class="img-fluid mb-3" style="height: 80px;">
+                    <p>We are proudly based in Kano, Nigeria.</p>
+                </div>
+                <!-- Third Icon -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="assets/images/delivery.png" alt="Delivery to Your Doorstep" class="img-fluid mb-3" style="height: 80px;">
+                    <p>We provide delivery services straight to your doorstep.</p>
+                </div>
+            </div>
+            <!-- Social Media Section -->
+            <div class="row mt-4 text-center">
+                <div class="col-md-6" data-aos="zoom-in">
+                    <a href="https://www.instagram.com/your_instagram_page" target="_blank" class="d-inline-block">
+                        <img src="assets/images/instagram.jpg" alt="Instagram" class="img-fluid mb-3" style="height: 50px;">
+                        <p>Follow us on Instagram</p>
+                    </a>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://wa.me/+2349069496994" target="_blank" class="d-inline-block">
+                        <img src="assets/images/whatsapp.jpg" alt="WhatsApp" class="img-fluid mb-3" style="height: 50px;">
+                        <p>Contact us on WhatsApp</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            color: #343a40;
+        }
+
+        #about p {
+            font-size: 1rem;
+            color: #495057;
+            line-height: 1.8;
+        }
+
+        #about img {
+            max-height: 80px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #about img:hover {
+            transform: scale(1.1);
+        }
+
+        .d-inline-block {
+            text-decoration: none;
+            color: #343a40;
+        }
+
+        .d-inline-block:hover {
+            color: #007bff;
+        }
+    </style>
+</section>
+
+<section id="testimonials" class="py-5 bg-white">
+    <div class="container text-center">
+        <h2 data-aos="fade-up">What Our Customers Say</h2>
+        <div id="testimonialCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="testimonial">"Fast and reliable delivery service! Highly recommended!"</p>
+                    <small>- Customer A</small>
+                </div>
+                <div class="carousel-item">
+                    <p class="testimonial">"Their quality assurance is unmatched. Always satisfied!"</p>
+                    <small>- Customer B</small>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+  <a
+  href="https://wa.me/+2349069496994"
+  class="whatsapp-link"
+  target="_blank"
+>
+  <img src="assets/images/whatsapp.jpg" alt="Chat with us" style="width: 50px; position: fixed; bottom: 20px; right: 20px;">
+</a>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 DANJAMMAL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+        });
+    </script>
+    
+</body>
+</html>
